@@ -20,7 +20,7 @@ import kotlinx.android.synthetic.main.fragment_main.view.*
 
 class MainFragment: Fragment() {
 
-    lateinit var recyclerView: SuperRecyclerView
+
 
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         var rootView = inflater!!.inflate(R.layout.fragment_main, container, false)
@@ -31,10 +31,7 @@ class MainFragment: Fragment() {
     fun initInstances(rootView: View) {
         initSearchToolbar()
 
-        recyclerView = rootView.main_listview
-        var layoutManager = GridLayoutManager(context, 2)
-        recyclerView.setLayoutManager(layoutManager)
-        recyclerView.adapter = CategoryListAdapter()
+
 
 
     }
