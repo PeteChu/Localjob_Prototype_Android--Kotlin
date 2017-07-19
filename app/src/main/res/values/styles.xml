@@ -32,4 +32,13 @@
         <item name="android:padding">5dp</item>
     </style>
 
+    <style name="profileSubHead">
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/click_bg</item>
+    </style>
+
 </resources>

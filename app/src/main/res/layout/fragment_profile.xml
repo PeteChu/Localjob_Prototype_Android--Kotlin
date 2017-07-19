@@ -14,8 +14,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:layout_weight="1"
-            android:orientation="vertical"
-            android:padding="10dp">
+            android:orientation="vertical">
 
             <TextView
                 style="@style/subHeadFont"
@@ -25,9 +24,11 @@
                 android:textStyle="bold" />
 
             <TextView
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingLeft="10dp"
+                android:paddingBottom="10dp"
                 android:text="ดูและแก้ไขข้อมูลส่วนตัว" />
 
         </LinearLayout>
@@ -35,106 +36,101 @@
         <ImageView
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:background="@mipmap/ic_launcher_round"
-            android:layout_margin="10dp" />
+            android:layout_margin="10dp"
+            android:background="@mipmap/ic_launcher_round" />
 
     </LinearLayout>
 
     <LinearLayout
-        android:padding="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <TextView
-            style="@style/subHeadFont"
-            android:text="ประวัติการส่งคำขอสมัครงาน"
+            style="@style/profileSubHead"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="ประวัติการส่งคำขอสมัครงาน" />
 
     </LinearLayout>
 
     <View
-        android:layout_marginLeft="10dp"
-        android:background="#F0F0F0"
         android:layout_width="match_parent"
-        android:layout_height="1dp"></View>
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:background="#F0F0F0"></View>
 
     <LinearLayout
-        android:padding="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <TextView
-            style="@style/subHeadFont"
-            android:text="รายการโปรด"
+            style="@style/profileSubHead"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="รายการโปรด" />
 
     </LinearLayout>
 
     <View
-        android:layout_marginLeft="10dp"
-        android:background="#F0F0F0"
         android:layout_width="match_parent"
-        android:layout_height="1dp"></View>
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:background="#F0F0F0"></View>
 
     <LinearLayout
-        android:padding="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <TextView
-            style="@style/subHeadFont"
-            android:text="ประกาศที่ดูล่าสุด"
+            style="@style/profileSubHead"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="ประกาศที่ดูล่าสุด" />
 
     </LinearLayout>
 
     <View
-        android:layout_marginLeft="10dp"
-        android:background="#F0F0F0"
         android:layout_width="match_parent"
-        android:layout_height="1dp"></View>
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:background="#F0F0F0"></View>
 
     <LinearLayout
-        android:padding="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <TextView
-            style="@style/subHeadFont"
-            android:text="ช่วยเหลือ"
+            style="@style/profileSubHead"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="ช่วยเหลือ" />
 
     </LinearLayout>
 
     <View
-        android:layout_marginLeft="10dp"
-        android:background="#F0F0F0"
         android:layout_width="match_parent"
-        android:layout_height="1dp"></View>
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:background="#F0F0F0"></View>
 
     <LinearLayout
-        android:padding="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <TextView
+            style="@style/profileSubHead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:gravity="center"
-            style="@style/subHeadFont"
-            android:text="ออกจากระบบ"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:text="ออกจากระบบ" />
 
     </LinearLayout>
 
     <View
-        android:layout_marginLeft="10dp"
-        android:background="#F0F0F0"
         android:layout_width="match_parent"
-        android:layout_height="1dp"></View>
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:background="#F0F0F0"></View>
 
 
 </LinearLayout>
