@@ -59,29 +59,30 @@ class TabMenuFragment : Fragment() {
 
     fun goToHomeView() {
         changColor(1)
+        
         fragmentManager.beginTransaction()
-                .replace(R.id.content_container, MainFragment.newInstance())
+                .replace(R.id.content_container, MainFragment.newInstance(),"main")
                 .commit()
     }
 
     fun goToChatView() {
         changColor(2)
         fragmentManager.beginTransaction()
-                .replace(R.id.content_container, ChatFragment.newInstances())
+                .replace(R.id.content_container, ChatFragment.newInstances(),"chat")
                 .commit()
     }
 
     fun goToNotiView() {
         changColor(3)
         fragmentManager.beginTransaction()
-                .replace(R.id.content_container, NotificationFragment.newInstances())
+                .replace(R.id.content_container, NotificationFragment.newInstances(),"noti")
                 .commit()
     }
 
     fun goToProfileView() {
         changColor(4)
         fragmentManager.beginTransaction()
-                .replace(R.id.content_container, ProfileFragment.newInstances())
+                .replace(R.id.content_container, ProfileFragment.newInstances(),"pro")
                 .commit()
     }
 

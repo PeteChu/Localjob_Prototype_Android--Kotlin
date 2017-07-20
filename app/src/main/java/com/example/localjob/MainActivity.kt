@@ -17,11 +17,25 @@ class MainActivity : AppCompatActivity() {
     fun initInstances() {
 
         supportFragmentManager.beginTransaction()
-                .add(R.id.content_container, MainFragment.newInstance())
+                .add(R.id.content_container, MainFragment.newInstance(),"main")
                 .commit()
 
         supportFragmentManager.beginTransaction()
-                .add(R.id.tab_menu_container, TabMenuFragment.newInstances())
+                .add(R.id.tab_menu_container, TabMenuFragment.newInstances(),"tab")
                 .commit()
+    }
+
+    override fun onBackPressed() {
+        var tmp = supportFragmentManager.findFragmentById(R.id.content_container).tag
+
+        if(tmp.equals("main")||tmp.equals("gochat"))
+        super.onBackPressed()
+        else {
+            var tab = supportFragmentManager.findFragmentByTag("tab") as TabMenuFragment
+            tab.changColor(1)
+            supportFragmentManager.beginTransaction()
+                    .replace(R.id.content_container, MainFragment.newInstance(),"main")
+                    .commit()
+        }
     }
 }

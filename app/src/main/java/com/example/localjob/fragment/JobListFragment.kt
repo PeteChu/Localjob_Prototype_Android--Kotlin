@@ -45,6 +45,9 @@ class JobListFragment: Fragment() {
                 .negativeText("no")
                 .build()
         filter.setOnClickListener(ClickFilter())
+        back.setOnClickListener{
+            fragmentManager.popBackStack()
+        }
 
 
 
@@ -54,15 +57,7 @@ class JobListFragment: Fragment() {
             dialog.show()
 
     }
-    fun initCustomViewDialog(){
-        var view:View = dialog.customView as View
-        var btnCat = view.cat
-        btnCat.setOnClickListener{
 
-        }
-
-
-    }
 
 
     companion object {
