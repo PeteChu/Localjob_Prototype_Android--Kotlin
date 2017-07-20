@@ -10,11 +10,14 @@ import com.github.ksoichiro.android.observablescrollview.ObservableScrollViewCal
 import com.github.ksoichiro.android.observablescrollview.ScrollState
 import kotlinx.android.synthetic.main.fragment_work_detail.view.*
 
+
+
+
 /**
  * Created by schecterza on 7/19/2017 AD.
  */
 
-class WorkDetailFragment: Fragment(), ObservableScrollViewCallbacks {
+class WorkDetailFragment : Fragment(), ObservableScrollViewCallbacks {
 
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val rootView = inflater!!.inflate(R.layout.fragment_work_detail, container, false)
@@ -30,6 +33,10 @@ class WorkDetailFragment: Fragment(), ObservableScrollViewCallbacks {
 
     }
 
+    override fun onViewStateRestored(savedInstanceState: Bundle?) {
+        super.onViewStateRestored(savedInstanceState)
+    }
+
     override fun onScrollChanged(scrollY: Int, firstScroll: Boolean, dragging: Boolean) {
 
     }
@@ -39,7 +46,7 @@ class WorkDetailFragment: Fragment(), ObservableScrollViewCallbacks {
     }
 
     companion object {
-        fun newInstances(): WorkDetailFragment{
+        fun newInstances(): WorkDetailFragment {
             var fragment = WorkDetailFragment()
             var args = Bundle()
             fragment.arguments = args
