@@ -34,7 +34,7 @@ class ProfileFragment: Fragment() {
         when(v.id) {
             R.id.user_profile -> {
                 fragmentManager.beginTransaction()
-                        .replace(R.id.content_container, UserProfileFragment.newInstances())
+                        .replace(R.id.content_container, UserProfileFragment.newInstances(), "userProfile")
                         .addToBackStack(null)
                         .commit()
             }
