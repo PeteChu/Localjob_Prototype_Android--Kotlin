@@ -107,8 +107,14 @@
                     android:scaleType="centerCrop"
                     android:src="@drawable/map" />
 
-            </LinearLayout>
+                <Button
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/holo_green_dark"
+                    android:text="ส่งใบสมัครงาน"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize" />
 
+            </LinearLayout>
 
         </RelativeLayout>
 
