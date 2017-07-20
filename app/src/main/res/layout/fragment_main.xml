@@ -41,7 +41,7 @@
                 android:layout_height="wrap_content" />
 
 
-        <include layout="@layout/item_category"/>
+        <include android:id="@+id/layout_category" layout="@layout/item_category"/>
 
         </LinearLayout>
     </ScrollView>
