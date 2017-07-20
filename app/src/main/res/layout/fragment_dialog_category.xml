@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <LinearLayout
+            android:id="@+id/cat"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="CATEGORY"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:background="#909090"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"></LinearLayout>
+        <LinearLayout
+            android:id="@+id/fil"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="FILTER"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:background="#909090"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"></LinearLayout>
+    <FrameLayout
+        android:orientation="vertical"
+        android:id="@+id/area_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include android:id="@+id/menu_CAT"
+            layout="@layout/fragment_in_dialog_cat"/>
+        <include
+            android:id="@+id/menu_Fil"
+            android:visibility="gone"
+            layout="@layout/fragment_in_dialog_fil"/>
+    </FrameLayout>
+
+</LinearLayout>
