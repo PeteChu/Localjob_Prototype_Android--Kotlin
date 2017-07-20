@@ -73,7 +73,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginLeft="10dp"
-                    android:text="10,0000-25,000"
+                    android:text="10,0000-13,000"
                     android:textColor="#000" />
 
             </LinearLayout>

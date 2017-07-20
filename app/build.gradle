@@ -32,6 +32,7 @@ dependencies {
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.malinskiy:superrecyclerview:1.1.4'
     compile 'com.github.ksoichiro:Android-ObservableScrollView:v1.6.0'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
     testCompile 'junit:junit:4.12'
 }
 repositories {

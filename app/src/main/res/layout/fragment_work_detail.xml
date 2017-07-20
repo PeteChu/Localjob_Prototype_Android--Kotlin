@@ -64,7 +64,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/poster"
-                    android:text="ตำแหน่ง: พนังงานขาย" />
+                    android:text="ตำแหน่ง: PR" />
 
                 <TextView
                     android:id="@+id/job_time"
@@ -78,7 +78,7 @@
                     style="@style/messageBody"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="รายได้: 8000 - 10000" />
+                    android:text="รายได้: 10000 - 13000" />
 
                 <TextView
                     android:id="@+id/job_skill"
@@ -107,12 +107,30 @@
                     android:scaleType="centerCrop"
                     android:src="@drawable/map" />
 
-                <Button
-                    android:layout_marginTop="10dp"
-                    android:background="@android:color/holo_green_dark"
-                    android:text="ส่งใบสมัครงาน"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="?attr/actionBarSize" />
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_call" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_button"
+                        android:text="ส่งใบสมัครงาน" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_chat_blue" />
+                </LinearLayout>
 
             </LinearLayout>
 

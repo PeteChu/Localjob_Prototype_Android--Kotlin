@@ -39,8 +39,10 @@ class WorkDetailFragment : Fragment(), ObservableScrollViewCallbacks {
 
         var activity = activity as AppCompatActivity
         activity.setSupportActionBar(rootView.toolbar)
-        activity.supportActionBar!!.setDisplayHomeAsUpEnabled(true)
-        activity.supportActionBar!!.setDisplayShowHomeEnabled(true)
+        var actionbar = activity.supportActionBar!!
+        actionbar.setDisplayShowHomeEnabled(true)
+        actionbar.setDisplayHomeAsUpEnabled(true)
+        actionbar.title = "Central Plaza Ubonratchathani"
 
         mImageView = rootView.image
         mToolbarView = rootView.toolbar
