@@ -59,7 +59,7 @@ class TabMenuFragment : Fragment() {
 
     fun goToHomeView() {
         changColor(1)
-        
+
         fragmentManager.beginTransaction()
                 .replace(R.id.content_container, MainFragment.newInstance(),"main")
                 .commit()
