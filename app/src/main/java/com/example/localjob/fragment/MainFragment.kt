@@ -37,8 +37,8 @@ class MainFragment: Fragment() {
         image = category.category1
         image.setOnClickListener {
             fragmentManager.beginTransaction()
-                    .replace(R.id.content_container,JobListFragment.newInstance())
-                    .addToBackStack(null)
+                    .replace(R.id.content_container,JobListFragment.newInstance(),"list")
+
                     .commit()
         }
 
@@ -49,7 +49,7 @@ class MainFragment: Fragment() {
 
     fun initSearchToolbar() {
         fragmentManager.beginTransaction()
-                .add(R.id.search_toolbar, SearchToolbar.newInstances())
+                .add(R.id.search_toolbar, SearchToolbar.newInstances(),"toolbar")
                 .commit()
     }
 

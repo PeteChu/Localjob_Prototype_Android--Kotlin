@@ -46,7 +46,7 @@ class ChatFragment: Fragment() {
 
     fun goToChatData() {
         fragmentManager.beginTransaction()
-                .replace(R.id.content_container, ChatDataFragment.newInstances())
+                .replace(R.id.content_container, ChatDataFragment.newInstances(),"gochat")
                 .addToBackStack(null)
                 .commit()
     }
