@@ -1,12 +1,12 @@
 package com.example.localjob.adapter
 
 import android.content.Context
-import android.support.v4.app.Fragment
 import android.support.v7.widget.RecyclerView
+import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import com.example.localjob.R
+import kotlinx.android.synthetic.main.item_tag.view.*
 
 /**
  * Created by schecterza on 7/21/2017 AD.
@@ -25,8 +25,7 @@ class SearchTagAdapter(mContext: Context) : RecyclerView.Adapter<SearchTagAdapte
     }
 
     override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): ViewHolder {
-        var v = TextView(parent!!.context)
-        v.text = "asdf"
+        var v = LayoutInflater.from(parent!!.context).inflate(R.layout.item_tag, parent, false)
         var viewHolder = ViewHolder(v)
         return viewHolder
     }
@@ -36,7 +35,7 @@ class SearchTagAdapter(mContext: Context) : RecyclerView.Adapter<SearchTagAdapte
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
         fun bindData(itemView: View, data: String) {
-            (itemView as TextView).text = data
+            itemView.item_tag.text = data
         }
     }
 }
