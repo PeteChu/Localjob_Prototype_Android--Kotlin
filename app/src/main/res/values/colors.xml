@@ -8,4 +8,6 @@
     <color name="primaryDark">#00796b</color>
     <color name="accent">#eeff41</color>
     <color name="accentLight">#F4FF81</color>
+
+    <color name="sky">#99ffff</color>
 </resources>

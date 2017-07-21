@@ -38,30 +38,111 @@
                 android:layout_height="50dp"
                 android:src="@drawable/central"
                 />
+            <com.daasuu.bl.BubbleLayout
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                app:bl_cornersRadius="30dp"
+                app:bl_bubbleColor="@color/sky"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_gravity="bottom"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:text="เรามีความสนใจร่วมงานกับคุณ กรุณาติดต่อกลับ โทร xxx-xxxxxx"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.daasuu.bl.BubbleLayout>
 
-            <TextView
-                android:layout_gravity="bottom"
-                android:paddingRight="30dp"
-                android:layout_weight="1"
-                android:text="เรามีความสนใจร่วมงานกับคุณ กรุณาติดต่อกลับ โทร xxx-xxxxxx"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
 
         </LinearLayout>
 
+        <LinearLayout
+            android:gravity="end"
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.daasuu.bl.BubbleLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                app:bl_arrowDirection="right"
+                app:bl_cornersRadius="30dp"
+                app:bl_bubbleColor="@color/sky"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:text="เรามีความสนใจร่วมงานกับคุณ กรุณาติดต่อกลับ โทร xxx-xxxxxx"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content" />
+            </com.daasuu.bl.BubbleLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                app:civ_border_width="1dp"
+                app:civ_border_color="#e5e5e5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/central"
+                />
+
+        </LinearLayout>
         <LinearLayout
             android:padding="10dp"
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <TextView
-                android:layout_gravity="bottom"
-                android:paddingLeft="30dp"
-                android:layout_weight="1"
-                android:text="เรามีความสนใจร่วมงานกับคุณ กรุณาติดต่อกลับ โทร xxx-xxxxxx"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+            <de.hdodenhof.circleimageview.CircleImageView
+                app:civ_border_width="1dp"
+                app:civ_border_color="#e5e5e5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/central"
+                />
+            <com.daasuu.bl.BubbleLayout
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                app:bl_cornersRadius="30dp"
+                app:bl_bubbleColor="@color/sky"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_gravity="bottom"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:text="เรามีความสนใจร่วมงานกับคุณ กรุณาติดต่อกลับ โทร xxx-xxxxxx"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.daasuu.bl.BubbleLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="end"
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.daasuu.bl.BubbleLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                app:bl_arrowDirection="right"
+                app:bl_cornersRadius="30dp"
+                app:bl_bubbleColor="@color/sky"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:text="เรามีความสนใจร่วมงานกับคุณ กรุณาติดต่อกลับ โทร xxx-xxxxxx"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content" />
+            </com.daasuu.bl.BubbleLayout>
 
             <de.hdodenhof.circleimageview.CircleImageView
                 app:civ_border_width="1dp"
@@ -73,53 +154,6 @@
 
         </LinearLayout>
 
-        <LinearLayout
-            android:padding="10dp"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <de.hdodenhof.circleimageview.CircleImageView
-                app:civ_border_width="1dp"
-                app:civ_border_color="#e5e5e5"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/central"
-                />
-
-            <TextView
-                android:layout_gravity="bottom"
-                android:paddingRight="30dp"
-                android:layout_weight="1"
-                android:text="เรามีความสนใจร่วมงานกับคุณ กรุณาติดต่อกลับ โทร xxx-xxxxxx"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:padding="10dp"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:layout_gravity="bottom"
-                android:paddingLeft="30dp"
-                android:layout_weight="1"
-                android:text="เรามีความสนใจร่วมงานกับคุณ กรุณาติดต่อกลับ โทร xxx-xxxxxx"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-            <de.hdodenhof.circleimageview.CircleImageView
-                app:civ_border_width="1dp"
-                app:civ_border_color="#e5e5e5"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/central"
-                />
-
-        </LinearLayout>
 
     </LinearLayout>
 
