@@ -67,6 +67,7 @@
 
                 <TextView
                     style="@style/messageTitle"
+                    android:textStyle="bold"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="รายละเอียด" />
@@ -77,7 +78,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/poster"
-                    android:text="ตำแหน่ง: PR" />
+                    android:text="ตำแหน่ง : PR" />
 
                 <TextView
                     android:id="@+id/job_time"
@@ -85,13 +86,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/job_title"
-                    android:text="เวลา: 8.00 - 16.00" />
+                    android:text="เวลา : 8.00 - 16.00" />
 
                 <TextView
                     style="@style/messageBody"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="รายได้: 10000 - 13000" />
+                    android:text="ค่าตอบแทน : 10000 - 13000" />
 
                 <TextView
                     android:id="@+id/job_skill"
@@ -102,6 +103,7 @@
                     android:text="คุณสมบัติ\n&#8226; อายุ 18 - 40 ปี\n&#8226; การศึกษา ม.6\n&#8226; เพศ ชาย - หญิง" />
 
                 <TextView
+                    android:textStyle="bold"
                     style="@style/messageTitle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
