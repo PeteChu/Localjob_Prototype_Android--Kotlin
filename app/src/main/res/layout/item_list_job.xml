@@ -22,8 +22,8 @@
             android:layout_marginRight="15dp">
 
             <de.hdodenhof.circleimageview.CircleImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:layout_margin="5dp"
                 app:civ_border_width="1dp"
                 app:civ_border_color="#e5e5e5"
@@ -35,7 +35,7 @@
                 android:layout_gravity="center"
                 android:padding="5dp"
                 android:text="สตีฟ จอบส์"
-                android:textSize="20sp"
+                android:textSize="18sp"
 
                 android:textStyle="bold" />
 
@@ -67,7 +67,7 @@
                     android:layout_height="150dp"
                     android:padding="5dp"
                     android:scaleType="fitXY"
-                    android:src="@drawable/confix" />
+                    android:src="@drawable/pr" />
 
             </LinearLayout>
 

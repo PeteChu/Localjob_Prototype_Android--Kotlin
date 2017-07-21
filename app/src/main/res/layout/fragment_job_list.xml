@@ -22,7 +22,7 @@
             android:id="@+id/category_btnback" />
         <TextView
             android:textColor="#fff"
-            android:text="งานช่าง"
+            android:text="พีอาร์"
             android:textSize="23sp"
             android:gravity="center"
             android:layout_gravity="center"

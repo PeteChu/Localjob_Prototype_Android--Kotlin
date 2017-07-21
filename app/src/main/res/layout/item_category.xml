@@ -17,11 +17,11 @@
 
             <ImageView
                 android:id="@+id/category1"
-                android:layout_gravity="center"
-                android:layout_weight="1"
                 android:layout_width="@dimen/item_category_w_h"
                 android:layout_height="@dimen/item_category_w_h"
-                android:background="@drawable/confix" />
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/pr" />
 
             <TextView
                 android:paddingBottom="5dp"
@@ -30,7 +30,7 @@
                 android:gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="งานช่าง" />
+                android:text="พีอาร์" />
         </LinearLayout>
         <LinearLayout
             android:layout_weight="1"
@@ -96,7 +96,7 @@
                 android:layout_weight="1"
                 android:layout_width="@dimen/item_category_w_h"
                 android:layout_height="@dimen/item_category_w_h"
-                android:background="@drawable/pr" />
+                android:background="@drawable/confix" />
             <TextView
                 android:paddingBottom="5dp"
                 android:paddingTop="5dp"
@@ -104,7 +104,7 @@
                 android:gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="พีอาร์" />
+                android:text="งานช่าง" />
         </LinearLayout>
 
     </LinearLayout>
@@ -147,7 +147,7 @@
                 android:layout_weight="1"
                 android:layout_width="@dimen/item_category_w_h"
                 android:layout_height="@dimen/item_category_w_h"
-                android:background="@drawable/job" />
+                android:background="@drawable/cheer" />
 
             <TextView
                 android:paddingBottom="5dp"
