@@ -17,8 +17,8 @@
                 android:id="@+id/category1"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:layout_width="175dp"
-                android:layout_height="175dp"
+                android:layout_width="@dimen/item_category_w_h"
+                android:layout_height="@dimen/item_category_w_h"
                 android:background="@drawable/job" />
 
             <TextView
@@ -40,8 +40,8 @@
                 android:id="@+id/category2"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:layout_width="175dp"
-                android:layout_height="175dp"
+                android:layout_width="@dimen/item_category_w_h"
+                android:layout_height="@dimen/item_category_w_h"
                 android:background="@drawable/job" />
 
             <TextView
@@ -69,8 +69,8 @@
                 android:id="@+id/category3"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:layout_width="175dp"
-                android:layout_height="175dp"
+                android:layout_width="@dimen/item_category_w_h"
+                android:layout_height="@dimen/item_category_w_h"
                 android:background="@drawable/job" />
 
             <TextView
@@ -92,8 +92,8 @@
                 android:id="@+id/category4"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:layout_width="175dp"
-                android:layout_height="175dp"
+                android:layout_width="@dimen/item_category_w_h"
+                android:layout_height="@dimen/item_category_w_h"
                 android:background="@drawable/job" />
             <TextView
                 android:paddingBottom="5dp"
@@ -120,8 +120,8 @@
                 android:id="@+id/category5"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:layout_width="175dp"
-                android:layout_height="175dp"
+                android:layout_width="@dimen/item_category_w_h"
+                android:layout_height="@dimen/item_category_w_h"
                 android:background="@drawable/job" />
 
             <TextView
@@ -143,8 +143,8 @@
                 android:id="@+id/category6"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:layout_width="175dp"
-                android:layout_height="175dp"
+                android:layout_width="@dimen/item_category_w_h"
+                android:layout_height="@dimen/item_category_w_h"
                 android:background="@drawable/job" />
 
             <TextView
