@@ -52,7 +52,7 @@
                     android:layout_gravity="bottom"
                     android:layout_weight="1"
                     android:padding="10dp"
-                    android:text="เรามีความสนใจร่วมงานกับคุณ กรุณาติดต่อกลับ โทร xxx-xxxxxx" />
+                    android:text="เรามีความสนใจร่วมงานกับคุณ กรุณาติดต่อกลับ โทร 045-123-456" />
             </com.daasuu.bl.BubbleLayout>
 
 
@@ -86,7 +86,7 @@
             <de.hdodenhof.circleimageview.CircleImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/central"
+                android:src="@drawable/user"
                 app:civ_border_color="#e5e5e5"
                 app:civ_border_width="1dp" />
 
@@ -153,7 +153,7 @@
             <de.hdodenhof.circleimageview.CircleImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/central"
+                android:src="@drawable/user"
                 app:civ_border_color="#e5e5e5"
                 app:civ_border_width="1dp" />
 

@@ -61,7 +61,7 @@
                     style="@style/messageBody"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="เรามีความสนใจร่วมงานกับคุณ กรุณาติดต่อกลับ โทร xxx-xxxxxx"
+                    android:text="เรามีความสนใจร่วมงานกับคุณ กรุณาติดต่อกลับ โทร 045-544-444"
                     android:textSize="14dp" />
             </LinearLayout>
 
@@ -91,14 +91,14 @@
                     style="@style/messageTitle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Por chan"
+                    android:text="ลุงจ๊อบ"
                     android:textSize="16dp" />
 
                 <TextView
                     style="@style/messageBody"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="กรุณาติดต่อกลับ ที่เบอร์ xxxxxxxxxx"
+                    android:text="กรุณาติดต่อกลับ ที่เบอร์ 090-999-9999"
                     android:textSize="14dp" />
             </LinearLayout>
 
