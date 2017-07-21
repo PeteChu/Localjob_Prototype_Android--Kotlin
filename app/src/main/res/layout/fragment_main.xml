@@ -35,7 +35,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="10dp"
                 android:text="แนะนำ"
-                android:textColor="#000"
+                android:textColor="#505050"
                 android:textSize="30sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
@@ -46,7 +46,7 @@
 
             <TextView
                 android:layout_margin="10dp"
-                android:textColor="#000"
+                android:textColor="#505050"
                 android:textStyle="bold"
                 android:textSize="30sp"
                 android:text="หมวดหมู่"
