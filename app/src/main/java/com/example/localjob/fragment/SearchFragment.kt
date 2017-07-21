@@ -31,6 +31,11 @@ class SearchFragment: Fragment() {
         var activity = activity as AppCompatActivity
         activity.setSupportActionBar(mToolbar)
 
+
+        mToolbar.setNavigationOnClickListener{ v ->
+            activity.onBackPressed()
+        }
+
         var actionBar = activity.supportActionBar!!
         actionBar.title = ""
         actionBar.setDisplayHomeAsUpEnabled(true)

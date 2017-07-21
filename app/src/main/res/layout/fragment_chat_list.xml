@@ -29,11 +29,11 @@
         android:orientation="vertical">
 
         <LinearLayout
-            android:background="@drawable/click_bg"
             android:id="@+id/list1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground">
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -67,7 +67,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/click_bg">
+            android:background="?attr/selectableItemBackground">
 
             <ImageView
                 android:layout_width="wrap_content"

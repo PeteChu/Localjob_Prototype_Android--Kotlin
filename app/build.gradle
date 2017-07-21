@@ -29,12 +29,12 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
-
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.malinskiy:superrecyclerview:1.1.4'
     compile 'com.github.ksoichiro:Android-ObservableScrollView:v1.6.0'
     compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.rengwuxian.materialedittext:library:2.1.4'
     testCompile 'junit:junit:4.12'
 }
 repositories {

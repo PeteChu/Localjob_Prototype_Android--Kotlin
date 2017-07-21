@@ -8,14 +8,14 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/colorPrimary">
+        android:background="@color/primary">
 
         <TextView
             android:id="@+id/toolbar_search"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginRight="15dp"
-            android:background="@android:color/holo_blue_light"
+            android:background="#4DB6AC"
             android:drawableLeft="@drawable/ic_search"
             android:gravity="center_vertical"
             android:text="Search by Tag" />
