@@ -2,6 +2,7 @@ package com.example.localjob.fragment
 
 import android.os.Bundle
 import android.support.v4.app.Fragment
+import android.support.v7.widget.DividerItemDecoration
 import android.support.v7.widget.LinearLayoutManager
 import android.view.LayoutInflater
 import android.view.View
@@ -30,6 +31,7 @@ class NotificationFragment: Fragment() {
         recyclerView = rootView.notification_list
         var layoutManager = LinearLayoutManager(context)
         recyclerView.setLayoutManager(layoutManager)
+        recyclerView.addItemDecoration(DividerItemDecoration(context, DividerItemDecoration.VERTICAL))
         recyclerView.adapter = NotificationListAdapter()
 
     }

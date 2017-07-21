@@ -5,20 +5,15 @@
     android:orientation="vertical">
 
     <LinearLayout
+        android:background="?attr/selectableItemBackground"
         android:padding="10dp"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <TextView
-            style="@style/messageTitle"
-            android:text="ด่วน!! รับสมัครพนักงานขาย รีบสมัครเลย."
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <TextView
             style="@style/messageBody"
-            android:text="xxxxxxxxxxxxxxxxxxx"
+            android:text="มีตำแหน่งงาน PR ที่ตรงกับความต้องการของคุณ"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 

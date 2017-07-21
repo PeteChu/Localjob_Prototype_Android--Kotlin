@@ -36,17 +36,19 @@
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
                 android:paddingTop="@dimen/activity_vertical_margin">
+
                 <LinearLayout
-                    android:orientation="horizontal"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
                     <de.hdodenhof.circleimageview.CircleImageView
-                        app:civ_border_width="1dp"
-                        app:civ_border_color="#e5e5e5"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:src="@drawable/central"
-                        />
+                        app:civ_border_color="#e5e5e5"
+                        app:civ_border_width="1dp" />
+
                     <TextView
                         android:id="@+id/poster"
                         style="@style/subHeadFont"
@@ -58,19 +60,18 @@
                 </LinearLayout>
 
 
-
                 <View
-                    android:layout_marginTop="15dp"
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="@android:color/black"></View>
+                    android:layout_marginTop="15dp"
+                    android:background="#E5E5E5"></View>
 
                 <TextView
                     style="@style/messageTitle"
-                    android:textStyle="bold"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="รายละเอียด" />
+                    android:text="รายละเอียด"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/job_title"
@@ -103,16 +104,16 @@
                     android:text="คุณสมบัติ\n&#8226; อายุ 18 - 40 ปี\n&#8226; การศึกษา ม.6\n&#8226; เพศ ชาย - หญิง" />
 
                 <TextView
-                    android:textStyle="bold"
                     style="@style/messageTitle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="แผนที่" />
+                    android:text="แผนที่"
+                    android:textStyle="bold" />
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="@android:color/black"></View>
+                    android:background="#E5E5E5"></View>
 
                 <ImageView
                     android:layout_width="match_parent"
@@ -125,16 +126,16 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"
-                    android:paddingBottom="10dp"
+                    android:layout_marginTop="10dp"
                     android:gravity="center_vertical"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp">
 
                     <ImageView
-                        android:padding="20dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:padding="20dp"
                         android:src="@drawable/ic_call" />
 
                     <Button
@@ -146,9 +147,9 @@
                         android:text="ส่งใบสมัครงาน" />
 
                     <ImageView
-                        android:padding="20dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:padding="20dp"
                         android:src="@drawable/ic_chat_blue" />
                 </LinearLayout>
 

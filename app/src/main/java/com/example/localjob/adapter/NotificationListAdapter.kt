@@ -30,7 +30,7 @@ class NotificationListAdapter() : RecyclerView.Adapter<NotificationListAdapter.V
     }
 
     override fun getItemCount(): Int {
-        return 10
+        return 5
     }
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {

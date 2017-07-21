@@ -23,13 +23,13 @@
     </style>
 
     <style name="messageTitle">
-        <item name="android:textSize">16sp</item>
-        <item name="android:padding">5dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:padding">10dp</item>
     </style>
 
     <style name="messageBody">
-        <item name="android:textSize">14sp</item>
-        <item name="android:padding">5dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:padding">10dp</item>
     </style>
 
     <style name="Toolbar" parent="Theme.AppCompat">

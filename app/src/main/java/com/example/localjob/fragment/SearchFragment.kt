@@ -48,6 +48,8 @@ class SearchFragment: Fragment() {
         actionBar.setDisplayHomeAsUpEnabled(true)
         actionBar.setDisplayShowHomeEnabled(true)
 
+
+
         mRecyclerView = rootView.search_list
         var linearLayoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
         mRecyclerView.setLayoutManager(linearLayoutManager)
