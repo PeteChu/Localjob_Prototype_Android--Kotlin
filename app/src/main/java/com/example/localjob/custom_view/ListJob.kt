@@ -30,6 +30,7 @@ class ListJob @JvmOverloads constructor(
 
     fun goToJobDetail() {
         var intent = Intent(context, StupidActivity::class.java)
+        intent.putExtra("view", "work")
         context.startActivity(intent)
     }
 

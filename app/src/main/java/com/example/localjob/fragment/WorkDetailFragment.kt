@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.Toast
 import com.example.localjob.R
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollView
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollViewCallbacks
@@ -47,6 +48,10 @@ class WorkDetailFragment : Fragment(), ObservableScrollViewCallbacks {
         mImageView = rootView.image
         mToolbarView = rootView.toolbar
         mToolbarView.setBackgroundColor(ScrollUtils.getColorWithAlpha(0f, resources.getColor(R.color.primary)))
+
+        mToolbarView.setNavigationOnClickListener{ v ->
+            activity.onBackPressed()
+        }
 
         mScrollView = rootView.scroll
         mScrollView.setScrollViewCallbacks(this)

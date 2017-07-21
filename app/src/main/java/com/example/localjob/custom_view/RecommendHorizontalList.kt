@@ -51,6 +51,7 @@ class RecommendHorizontalList @JvmOverloads constructor(
 
     fun goToWorkDetail() {
         var intent = Intent( context, StupidActivity::class.java )
+        intent.putExtra("view", "work")
         context.startActivity(intent)
     }
 

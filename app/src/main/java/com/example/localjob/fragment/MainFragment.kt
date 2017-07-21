@@ -1,5 +1,6 @@
 package com.example.localjob.fragment
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.widget.GridLayoutManager
@@ -9,7 +10,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.ListView
+import android.widget.TextView
 import com.example.localjob.R
+import com.example.localjob.StupidActivity
 import com.example.localjob.adapter.CategoryListAdapter
 import com.example.localjob.toolbar.SearchToolbar
 import com.malinskiy.superrecyclerview.SuperRecyclerView
@@ -23,6 +26,7 @@ import kotlinx.android.synthetic.main.item_category.view.*
 class MainFragment: Fragment() {
     lateinit var category:View
     lateinit var image:ImageView
+    lateinit var search: TextView
 
 
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View? {
@@ -32,25 +36,28 @@ class MainFragment: Fragment() {
     }
 
     fun initInstances(rootView: View) {
-        initSearchToolbar()
+
+        search = rootView.toolbar_search
+        search.setOnClickListener(myOnClick)
+
         category = rootView.layout_category
         image = category.category1
         image.setOnClickListener {
             fragmentManager.beginTransaction()
                     .replace(R.id.content_container,JobListFragment.newInstance(),"list")
-
                     .commit()
         }
 
-
-
-
     }
 
-    fun initSearchToolbar() {
-        fragmentManager.beginTransaction()
-                .add(R.id.search_toolbar, SearchToolbar.newInstances(),"toolbar")
-                .commit()
+    var myOnClick = View.OnClickListener{v ->
+        when(v.id) {
+            R.id.toolbar_search -> {
+                var intent = Intent(context, StupidActivity::class.java)
+                intent.putExtra("view", "search")
+                context.startActivity(intent)
+            }
+        }
     }
 
     companion object {

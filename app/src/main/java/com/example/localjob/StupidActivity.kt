@@ -2,6 +2,7 @@ package com.example.localjob
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.example.localjob.fragment.SearchFragment
 import com.example.localjob.fragment.WorkDetailFragment
 
 class StupidActivity : AppCompatActivity() {
@@ -15,9 +16,22 @@ class StupidActivity : AppCompatActivity() {
 
     fun initInstances() {
 
-        supportFragmentManager.beginTransaction()
-                .add(R.id.stupid_container, WorkDetailFragment.newInstances())
-                .commit()
+        var intent = intent
+        var view = intent.extras["view"]
+
+        when(view) {
+            "search" -> {
+                supportFragmentManager.beginTransaction()
+                        .add(R.id.stupid_container, SearchFragment.newInstances())
+                        .commit()
+            }
+            "work" -> {
+                supportFragmentManager.beginTransaction()
+                        .add(R.id.stupid_container, WorkDetailFragment.newInstances())
+                        .commit()
+            }
+        }
+
 
     }
 }
