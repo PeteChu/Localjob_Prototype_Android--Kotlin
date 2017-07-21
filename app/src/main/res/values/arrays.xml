@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="tags">
+        <item>ขับรถ</item>
+        <item>พนักงานขาย</item>
+        <item>รักษาความปลอดภัย</item>
+        <item>นักดนตรี</item>
+        <item>นักร้อง</item>
+    </array>
+</resources>

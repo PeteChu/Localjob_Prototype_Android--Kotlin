@@ -12,13 +12,13 @@
 
         <TextView
             style="@style/messageTitle"
-            android:text="New Job !!!"
+            android:text="ด่วน!! รับสมัครพนักงานขาย รีบสมัครเลย."
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <TextView
             style="@style/messageBody"
-            android:text="XXXXXXXXXXXXXXXXXXXXX"
+            android:text="xxxxxxxxxxxxxxxxxxx"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 

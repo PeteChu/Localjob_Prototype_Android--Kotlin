@@ -5,6 +5,7 @@
     android:orientation="vertical">
 
     <LinearLayout
+        android:elevation="4dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -13,13 +14,13 @@
             style="@style/headFont"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Notification" />
+            android:text="แจ้งเตือน" />
 
         <TextView
             style="@style/subHeadFont"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="You have unread notification" />
+            android:text="คุณมีแจ้งเตือนที่ยังไม่ได้อ่าน" />
 
     </LinearLayout>
 

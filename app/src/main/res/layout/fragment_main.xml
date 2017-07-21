@@ -11,6 +11,7 @@
         android:background="@color/primary">
 
         <TextView
+            android:textColor="@android:color/white"
             android:id="@+id/toolbar_search"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -18,47 +19,52 @@
             android:background="#4DB6AC"
             android:drawableLeft="@drawable/ic_search"
             android:gravity="center_vertical"
-            android:text="Search by Tag" />
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="ค้นหา" />
 
     </android.support.v7.widget.Toolbar>
 
     <ScrollView
-        android:scrollbars="none"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
             <TextView
-                android:textStyle="bold"
-                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
                 android:text="แนะนำ"
                 android:textColor="#000"
                 android:textSize="30sp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:textStyle="bold" />
 
             <com.example.localjob.custom_view.RecommendHorizontalList
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-
-            <TextView
-                android:layout_margin="10dp"
-                android:textColor="#000"
-                android:textStyle="bold"
-                android:textSize="30sp"
-                android:text="หมวดหมู่"
-                android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="หมวดหมู่"
+                android:textColor="#000"
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
-        <include android:id="@+id/layout_category" layout="@layout/item_category"/>
+
+            <include
+                android:id="@+id/layout_category"
+                layout="@layout/item_category" />
 
         </LinearLayout>
     </ScrollView>
-
 
 
 </LinearLayout>

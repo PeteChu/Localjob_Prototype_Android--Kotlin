@@ -3,11 +3,15 @@ package com.example.localjob.fragment
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
+import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.Toolbar
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.LinearLayout
 import com.example.localjob.R
+import com.example.localjob.adapter.SearchTagAdapter
+import com.malinskiy.superrecyclerview.SuperRecyclerView
 import kotlinx.android.synthetic.main.fragment_search.view.*
 
 /**
@@ -17,6 +21,7 @@ import kotlinx.android.synthetic.main.fragment_search.view.*
 class SearchFragment: Fragment() {
 
     lateinit var mToolbar: Toolbar
+    lateinit var mRecyclerView: SuperRecyclerView
 
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val rootView = inflater!!.inflate(R.layout.fragment_search, container, false)
@@ -40,6 +45,11 @@ class SearchFragment: Fragment() {
         actionBar.title = ""
         actionBar.setDisplayHomeAsUpEnabled(true)
         actionBar.setDisplayShowHomeEnabled(true)
+
+        mRecyclerView = rootView.search_list
+        var linearLayoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
+        mRecyclerView.setLayoutManager(linearLayoutManager)
+        mRecyclerView.adapter = SearchTagAdapter(context)
 
 
     }

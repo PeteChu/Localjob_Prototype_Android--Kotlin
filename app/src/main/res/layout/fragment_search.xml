@@ -23,14 +23,18 @@
         android:orientation="vertical">
 
         <com.rengwuxian.materialedittext.MaterialEditText
-            android:textSize="30dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Tag"
+            android:hint="ค้นหา"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textSize="20dp"
             app:met_hideUnderline="true"
+            app:met_textColor="@android:color/white"
             app:met_textColorHint="#80FFFFFF" />
 
         <com.malinskiy.superrecyclerview.SuperRecyclerView
+            android:id="@+id/search_list"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="20dp"></com.malinskiy.superrecyclerview.SuperRecyclerView>
