@@ -9,16 +9,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
-import android.widget.ListView
 import com.afollestad.materialdialogs.MaterialDialog
+import com.example.localjob.MainActivity
 import com.example.localjob.R
-import com.example.localjob.adapter.CategoryListAdapter
-import com.example.localjob.toolbar.SearchToolbar
-import com.malinskiy.superrecyclerview.SuperRecyclerView
-import kotlinx.android.synthetic.main.fragment_dialog_category.*
-import kotlinx.android.synthetic.main.fragment_dialog_category.view.*
 import kotlinx.android.synthetic.main.fragment_job_list.view.*
-import kotlinx.android.synthetic.main.fragment_main.view.*
+
 
 /**
  * Created by schecterza on 7/18/2017 AD.
@@ -46,7 +41,7 @@ class JobListFragment: Fragment() {
                 .build()
         filter.setOnClickListener(ClickFilter())
         back.setOnClickListener{
-            fragmentManager.popBackStack()
+            (activity as MainActivity).onBackPressed()
         }
 
 

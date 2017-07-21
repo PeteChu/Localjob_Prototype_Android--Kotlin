@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#e0e0e0"
     android:orientation="vertical">
 
@@ -9,6 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
+        android:elevation="4dp"
         android:background="#fff"
         android:orientation="vertical">
 
@@ -19,18 +21,20 @@
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp">
 
-            <ImageView
+            <de.hdodenhof.circleimageview.CircleImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_margin="5dp"
-                android:src="@mipmap/ic_launcher_round" />
+                app:civ_border_width="1dp"
+                app:civ_border_color="#e5e5e5"
+                android:src="@drawable/steve_job" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:padding="5dp"
-                android:text="สตีป จ๊อบ"
+                android:text="สตีฟ จอบส์"
                 android:textSize="20sp"
 
                 android:textStyle="bold" />

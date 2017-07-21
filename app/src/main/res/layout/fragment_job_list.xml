@@ -5,7 +5,7 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
     <android.support.constraint.ConstraintLayout
-        android:background="@color/colorPrimary"
+        android:background="@color/primary"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize">
         <ImageView
@@ -21,7 +21,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             android:id="@+id/category_btnback" />
         <TextView
-            android:textColor="#000"
+            android:textColor="#fff"
             android:text="Category"
             android:textSize="23sp"
             android:gravity="center"
