@@ -3,6 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical">
+
+    <!--catcheer ,pr,ขับรถ-->
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
@@ -19,7 +21,7 @@
                 android:layout_weight="1"
                 android:layout_width="@dimen/item_category_w_h"
                 android:layout_height="@dimen/item_category_w_h"
-                android:background="@drawable/job" />
+                android:background="@drawable/confix" />
 
             <TextView
                 android:paddingBottom="5dp"
@@ -28,7 +30,7 @@
                 android:gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="PR" />
+                android:text="งานช่าง" />
         </LinearLayout>
         <LinearLayout
             android:layout_weight="1"
@@ -42,7 +44,7 @@
                 android:layout_weight="1"
                 android:layout_width="@dimen/item_category_w_h"
                 android:layout_height="@dimen/item_category_w_h"
-                android:background="@drawable/job" />
+                android:background="@drawable/it" />
 
             <TextView
                 android:paddingBottom="5dp"
@@ -51,7 +53,7 @@
                 android:gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="PR" />
+                android:text="ไอที" />
         </LinearLayout>
 
     </LinearLayout>
@@ -71,7 +73,7 @@
                 android:layout_weight="1"
                 android:layout_width="@dimen/item_category_w_h"
                 android:layout_height="@dimen/item_category_w_h"
-                android:background="@drawable/job" />
+                android:background="@drawable/kidchen" />
 
             <TextView
                 android:paddingBottom="5dp"
@@ -80,7 +82,7 @@
                 android:gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="PR" />
+                android:text="ครัว" />
         </LinearLayout>
         <LinearLayout
             android:layout_weight="1"
@@ -94,7 +96,7 @@
                 android:layout_weight="1"
                 android:layout_width="@dimen/item_category_w_h"
                 android:layout_height="@dimen/item_category_w_h"
-                android:background="@drawable/job" />
+                android:background="@drawable/pr" />
             <TextView
                 android:paddingBottom="5dp"
                 android:paddingTop="5dp"
@@ -102,7 +104,7 @@
                 android:gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="PR" />
+                android:text="พีอาร์" />
         </LinearLayout>
 
     </LinearLayout>
@@ -122,7 +124,7 @@
                 android:layout_weight="1"
                 android:layout_width="@dimen/item_category_w_h"
                 android:layout_height="@dimen/item_category_w_h"
-                android:background="@drawable/job" />
+                android:background="@drawable/drive" />
 
             <TextView
                 android:paddingBottom="5dp"
@@ -131,7 +133,7 @@
                 android:gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="PR" />
+                android:text="ขับรถ" />
         </LinearLayout>
         <LinearLayout
             android:layout_weight="1"
@@ -154,7 +156,7 @@
                 android:gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="PR" />
+                android:text="แคชเชียร์" />
         </LinearLayout>
 
     </LinearLayout>

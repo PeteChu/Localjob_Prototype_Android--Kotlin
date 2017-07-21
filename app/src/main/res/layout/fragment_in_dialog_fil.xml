@@ -3,24 +3,25 @@
     android:orientation="horizontal" android:layout_width="match_parent"
     android:layout_height="match_parent">
 <RadioGroup
-    android:layout_margin="10dp"
+
+    android:layout_margin="20dp"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
     <RadioButton
         android:textSize="18sp"
-        android:layout_margin="5dp"
+        android:layout_margin="10dp"
         android:text="ระยะทาง"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
     <RadioButton
         android:textSize="18sp"
-        android:layout_margin="5dp"
+        android:layout_margin="10dp"
         android:text="ความนิยม"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
     <RadioButton
         android:textSize="18sp"
-        android:layout_margin="5dp"
+        android:layout_margin="10dp"
         android:text="ค่าตอบแทน"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
