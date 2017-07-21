@@ -17,7 +17,7 @@
                 android:textColor="#000"
                 android:textSize="20sp"
                 android:gravity="center"
-                android:text="CATEGORY"
+                android:text="ตัวกรอง"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
         </LinearLayout>
@@ -35,7 +35,7 @@
                 android:textColor="#000"
                 android:textSize="20sp"
                 android:gravity="center"
-                android:text="FILTER"
+                android:text="เรียงตาม"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
         </LinearLayout>

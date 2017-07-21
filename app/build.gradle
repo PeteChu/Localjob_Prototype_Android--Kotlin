@@ -22,6 +22,7 @@ android {
 }
 
 dependencies {
+    compile 'com.daasuu:BubbleLayout:1.1.1'
     compile 'com.shawnlin:number-picker:2.4.4'
     compile 'com.afollestad.material-dialogs:core:0.9.4.5'
     compile fileTree(dir: 'libs', include: ['*.jar'])
