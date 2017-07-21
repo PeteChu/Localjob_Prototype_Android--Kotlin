@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
     <android.support.v7.widget.Toolbar
@@ -30,12 +31,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <ImageView
-                android:background="@mipmap/ic_launcher_round"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+            <de.hdodenhof.circleimageview.CircleImageView
+                app:civ_border_width="1dp"
+                app:civ_border_color="#e5e5e5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/central"
+                />
 
             <TextView
+                android:layout_gravity="bottom"
                 android:paddingRight="30dp"
                 android:layout_weight="1"
                 android:text="เรามีความสนใจร่วมงานกับคุณ กรุณาติดต่อกลับ โทร xxx-xxxxxx"
@@ -51,16 +56,20 @@
             android:layout_height="wrap_content">
 
             <TextView
+                android:layout_gravity="bottom"
                 android:paddingLeft="30dp"
                 android:layout_weight="1"
                 android:text="เรามีความสนใจร่วมงานกับคุณ กรุณาติดต่อกลับ โทร xxx-xxxxxx"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
-            <ImageView
-                android:background="@mipmap/ic_launcher_round"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+            <de.hdodenhof.circleimageview.CircleImageView
+                app:civ_border_width="1dp"
+                app:civ_border_color="#e5e5e5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/central"
+                />
 
         </LinearLayout>
 
@@ -70,12 +79,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <ImageView
-                android:background="@mipmap/ic_launcher_round"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+            <de.hdodenhof.circleimageview.CircleImageView
+                app:civ_border_width="1dp"
+                app:civ_border_color="#e5e5e5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/central"
+                />
 
             <TextView
+                android:layout_gravity="bottom"
                 android:paddingRight="30dp"
                 android:layout_weight="1"
                 android:text="เรามีความสนใจร่วมงานกับคุณ กรุณาติดต่อกลับ โทร xxx-xxxxxx"
@@ -91,16 +104,20 @@
             android:layout_height="wrap_content">
 
             <TextView
+                android:layout_gravity="bottom"
                 android:paddingLeft="30dp"
                 android:layout_weight="1"
                 android:text="เรามีความสนใจร่วมงานกับคุณ กรุณาติดต่อกลับ โทร xxx-xxxxxx"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
-            <ImageView
-                android:background="@mipmap/ic_launcher_round"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+            <de.hdodenhof.circleimageview.CircleImageView
+                app:civ_border_width="1dp"
+                app:civ_border_color="#e5e5e5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/central"
+                />
 
         </LinearLayout>
 

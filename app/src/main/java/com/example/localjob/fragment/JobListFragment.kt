@@ -36,8 +36,8 @@ class JobListFragment: Fragment() {
         filter = rootView.filter_category
         dialog = MaterialDialog.Builder(activity)
                 .customView(DialogFilter(context),true)
-                .positiveText("yes")
-                .negativeText("no")
+                .positiveText("ตกลง")
+                .negativeText("ยกเลิก")
                 .build()
         filter.setOnClickListener(ClickFilter())
         back.setOnClickListener{
