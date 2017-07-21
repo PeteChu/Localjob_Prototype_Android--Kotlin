@@ -5,14 +5,16 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import com.example.localjob.R
+import com.rengwuxian.materialedittext.MaterialEditText
 import kotlinx.android.synthetic.main.item_tag.view.*
 
 /**
  * Created by schecterza on 7/21/2017 AD.
  */
 
-class SearchTagAdapter(mContext: Context) : RecyclerView.Adapter<SearchTagAdapter.ViewHolder>() {
+class SearchTagAdapter(mContext: Context, searchBar: MaterialEditText) : RecyclerView.Adapter<SearchTagAdapter.ViewHolder>() {
 
     var tags: Array<String>
 
@@ -27,6 +29,7 @@ class SearchTagAdapter(mContext: Context) : RecyclerView.Adapter<SearchTagAdapte
     override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): ViewHolder {
         var v = LayoutInflater.from(parent!!.context).inflate(R.layout.item_tag, parent, false)
         var viewHolder = ViewHolder(v)
+        v.setOnClickListener(myOnClick)
         return viewHolder
     }
 
@@ -38,4 +41,9 @@ class SearchTagAdapter(mContext: Context) : RecyclerView.Adapter<SearchTagAdapte
             itemView.item_tag.text = data
         }
     }
+
+    var myOnClick = View.OnClickListener { v ->
+        Toast.makeText(mContext, "Click", Toast.LENGTH_SHORT).show()
+    }
+
 }

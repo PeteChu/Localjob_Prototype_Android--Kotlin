@@ -10,10 +10,12 @@ import android.support.v7.widget.Toolbar
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.EditText
 import android.widget.LinearLayout
 import com.example.localjob.R
 import com.example.localjob.adapter.SearchTagAdapter
 import com.malinskiy.superrecyclerview.SuperRecyclerView
+import com.rengwuxian.materialedittext.MaterialEditText
 import kotlinx.android.synthetic.main.fragment_search.view.*
 
 /**
@@ -23,6 +25,7 @@ import kotlinx.android.synthetic.main.fragment_search.view.*
 class SearchFragment: Fragment() {
 
     lateinit var mToolbar: Toolbar
+    lateinit var mEditText: MaterialEditText
     lateinit var mRecyclerView: SuperRecyclerView
 
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View? {
@@ -48,13 +51,13 @@ class SearchFragment: Fragment() {
         actionBar.setDisplayHomeAsUpEnabled(true)
         actionBar.setDisplayShowHomeEnabled(true)
 
-
+        mEditText = rootView.search_bar
 
         mRecyclerView = rootView.search_list
         var linearLayoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
         mRecyclerView.setLayoutManager(linearLayoutManager)
         mRecyclerView.addItemDecoration(DividerItemDecoration(context, DividerItemDecoration.VERTICAL))
-        mRecyclerView.adapter = SearchTagAdapter(context)
+        mRecyclerView.adapter = SearchTagAdapter(context, mEditText)
 
 
     }
