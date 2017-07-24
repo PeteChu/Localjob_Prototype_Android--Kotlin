@@ -12,9 +12,8 @@
         android:orientation="vertical">
 
         <TextView
-            android:paddingStart="5dp"
+            style="@style/headFont"
             android:textStyle="bold"
-            android:textSize="40sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="กล่องข้อความ" />
