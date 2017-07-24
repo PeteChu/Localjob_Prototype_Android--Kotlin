@@ -8,7 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
-import android.widget.Toast
+import com.example.localjob.MainActivity
 import com.example.localjob.R
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollView
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollViewCallbacks
@@ -37,7 +37,6 @@ class WorkDetailFragment : Fragment(), ObservableScrollViewCallbacks {
 
     fun initInstances(rootView: View) {
 
-
         var activity = activity as AppCompatActivity
         activity.setSupportActionBar(rootView.toolbar)
         var actionbar = activity.supportActionBar!!
@@ -46,6 +45,13 @@ class WorkDetailFragment : Fragment(), ObservableScrollViewCallbacks {
         actionbar.title = "Central Plaza Ubonratchathani"
 
         mImageView = rootView.image
+        mImageView.setOnClickListener {
+            fragmentManager.beginTransaction()
+                    .replace(R.id.stupid_container, ViewImageFragment.newInstances())
+                    .addToBackStack(null)
+                    .commit()
+        }
+
         mToolbarView = rootView.toolbar
         mToolbarView.setBackgroundColor(ScrollUtils.getColorWithAlpha(0f, resources.getColor(R.color.primary)))
 
