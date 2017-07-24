@@ -9,6 +9,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.LinearLayout
 import android.widget.ListView
 import android.widget.TextView
 import com.example.localjob.R
@@ -25,7 +26,7 @@ import kotlinx.android.synthetic.main.item_category.view.*
 
 class MainFragment: Fragment() {
     lateinit var category:View
-    lateinit var image:ImageView
+    lateinit var image:LinearLayout
     lateinit var search: TextView
 
 

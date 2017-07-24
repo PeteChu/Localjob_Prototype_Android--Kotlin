@@ -15,13 +15,35 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <ImageView
+            <LinearLayout
                 android:id="@+id/category1"
-                android:layout_width="@dimen/item_category_w_h"
-                android:layout_height="@dimen/item_category_w_h"
                 android:layout_gravity="center"
-                android:layout_weight="1"
-                android:background="@drawable/pr" />
+                android:layout_width="@dimen/item_category_w_h"
+                android:layout_height="@dimen/item_category_w_h">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:src="@drawable/pr"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <FrameLayout
+                        android:background="#75000000"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"></FrameLayout>
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="พีอาร์"
+                        android:textColor="#FFF"
+                        android:textSize="50dp" />
+
+                </FrameLayout>
+
+            </LinearLayout>
 
             <TextView
                 android:paddingBottom="5dp"
@@ -38,13 +60,33 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <ImageView
+            <LinearLayout
                 android:id="@+id/category2"
                 android:layout_gravity="center"
-                android:layout_weight="1"
                 android:layout_width="@dimen/item_category_w_h"
-                android:layout_height="@dimen/item_category_w_h"
-                android:background="@drawable/it" />
+                android:layout_height="@dimen/item_category_w_h">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:src="@drawable/it"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <FrameLayout
+                        android:background="#75000000"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"></FrameLayout>
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="#FFF"
+                        android:textSize="50dp"
+                        android:text="ไอที"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </FrameLayout>
+
+            </LinearLayout>
 
             <TextView
                 android:paddingBottom="5dp"
@@ -67,13 +109,33 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <ImageView
+            <LinearLayout
                 android:id="@+id/category3"
                 android:layout_gravity="center"
-                android:layout_weight="1"
                 android:layout_width="@dimen/item_category_w_h"
-                android:layout_height="@dimen/item_category_w_h"
-                android:background="@drawable/kidchen" />
+                android:layout_height="@dimen/item_category_w_h">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:src="@drawable/kidchen"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <FrameLayout
+                        android:background="#75000000"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"></FrameLayout>
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="#FFF"
+                        android:textSize="50dp"
+                        android:text="ครัว"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </FrameLayout>
+
+            </LinearLayout>
 
             <TextView
                 android:paddingBottom="5dp"
@@ -90,13 +152,33 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <ImageView
+            <LinearLayout
                 android:id="@+id/category4"
                 android:layout_gravity="center"
-                android:layout_weight="1"
                 android:layout_width="@dimen/item_category_w_h"
-                android:layout_height="@dimen/item_category_w_h"
-                android:background="@drawable/confix" />
+                android:layout_height="@dimen/item_category_w_h">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:src="@drawable/confix"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <FrameLayout
+                        android:background="#75000000"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"></FrameLayout>
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="#FFF"
+                        android:textSize="50dp"
+                        android:text="ช่าง"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </FrameLayout>
+
+            </LinearLayout>
             <TextView
                 android:paddingBottom="5dp"
                 android:paddingTop="5dp"
@@ -118,13 +200,33 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <ImageView
+            <LinearLayout
                 android:id="@+id/category5"
                 android:layout_gravity="center"
-                android:layout_weight="1"
                 android:layout_width="@dimen/item_category_w_h"
-                android:layout_height="@dimen/item_category_w_h"
-                android:background="@drawable/drive" />
+                android:layout_height="@dimen/item_category_w_h">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:src="@drawable/drive"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <FrameLayout
+                        android:background="#75000000"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"></FrameLayout>
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="#FFF"
+                        android:textSize="50dp"
+                        android:text="ขับ"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </FrameLayout>
+
+            </LinearLayout>
 
             <TextView
                 android:paddingBottom="5dp"
@@ -141,14 +243,33 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <ImageView
+            <LinearLayout
                 android:id="@+id/category6"
                 android:layout_gravity="center"
-                android:layout_weight="1"
                 android:layout_width="@dimen/item_category_w_h"
-                android:layout_height="@dimen/item_category_w_h"
-                android:background="@drawable/cheer" />
+                android:layout_height="@dimen/item_category_w_h">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:src="@drawable/cheer"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <FrameLayout
+                        android:background="#75000000"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"></FrameLayout>
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="#FFF"
+                        android:textSize="40dp"
+                        android:text="แคชเชียร์"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
 
+                </FrameLayout>
+
+            </LinearLayout>
             <TextView
                 android:paddingBottom="5dp"
                 android:paddingTop="5dp"
