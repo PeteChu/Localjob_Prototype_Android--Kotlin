@@ -7,8 +7,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
         <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_marginTop="23dp"
-
+            android:layout_marginTop="21dp"
             android:src="@drawable/bash"
             android:layout_marginLeft="10dp"
             android:layout_width="15dp"
@@ -24,7 +23,7 @@
         android:layout_height="wrap_content">
 
         <TextView
-
+            android:textStyle="bold"
             style="@style/messageBody"
             android:text="มีตำแหน่งงาน PR ที่ตรงกับความต้องการของคุณ"
             android:layout_width="wrap_content"
@@ -33,6 +32,12 @@
         <TextView
             android:padding="10dp"
             android:text="จาก: ลุงจอบส์"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="11dp"
+            android:paddingLeft="10dp"
+            android:text="27/07/2017"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
