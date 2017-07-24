@@ -45,14 +45,7 @@
 
             </LinearLayout>
 
-            <TextView
-                android:paddingBottom="5dp"
-                android:paddingTop="5dp"
-                android:textSize="16sp"
-                android:gravity="center"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="พีอาร์" />
+
         </LinearLayout>
         <LinearLayout
             android:layout_weight="1"
@@ -88,18 +81,13 @@
 
             </LinearLayout>
 
-            <TextView
-                android:paddingBottom="5dp"
-                android:paddingTop="5dp"
-                android:textSize="16sp"
-                android:gravity="center"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="ไอที" />
+
         </LinearLayout>
 
     </LinearLayout>
     <LinearLayout
+        android:layout_marginTop="15dp"
+
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -137,14 +125,7 @@
 
             </LinearLayout>
 
-            <TextView
-                android:paddingBottom="5dp"
-                android:paddingTop="5dp"
-                android:textSize="16sp"
-                android:gravity="center"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="ครัว" />
+
         </LinearLayout>
         <LinearLayout
             android:layout_weight="1"
@@ -179,18 +160,13 @@
                 </FrameLayout>
 
             </LinearLayout>
-            <TextView
-                android:paddingBottom="5dp"
-                android:paddingTop="5dp"
-                android:textSize="16sp"
-                android:gravity="center"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="งานช่าง" />
+
         </LinearLayout>
 
     </LinearLayout>
     <LinearLayout
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -220,7 +196,7 @@
                         android:gravity="center"
                         android:textColor="#FFF"
                         android:textSize="50dp"
-                        android:text="ขับ"
+                        android:text="ขับรถ"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent" />
 
@@ -228,14 +204,7 @@
 
             </LinearLayout>
 
-            <TextView
-                android:paddingBottom="5dp"
-                android:paddingTop="5dp"
-                android:textSize="16sp"
-                android:gravity="center"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="ขับรถ" />
+
         </LinearLayout>
         <LinearLayout
             android:layout_weight="1"
@@ -260,24 +229,18 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"></FrameLayout>
                     <TextView
+                        android:textColor="#fff"
                         android:gravity="center"
-                        android:textColor="#FFF"
-                        android:textSize="40dp"
+                        android:textSize="40sp"
                         android:text="แคชเชียร์"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent" />
 
+
                 </FrameLayout>
 
             </LinearLayout>
-            <TextView
-                android:paddingBottom="5dp"
-                android:paddingTop="5dp"
-                android:textSize="16sp"
-                android:gravity="center"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="แคชเชียร์" />
+
         </LinearLayout>
 
     </LinearLayout>
