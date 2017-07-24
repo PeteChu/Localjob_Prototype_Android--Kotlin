@@ -59,11 +59,12 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:textStyle="bold"
                     style="@style/messageTitle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Central Plaza Ubonratchathani"
-                    android:textSize="16dp" />
+                    android:textSize="15dp" />
 
                 <TextView
                     style="@style/messageBody"
@@ -71,6 +72,12 @@
                     android:layout_height="match_parent"
                     android:text="เรามีความสนใจร่วมงานกับคุณ กรุณาติดต่อกลับ โทร 045-544-444"
                     android:textSize="14dp" />
+                <TextView
+                    android:textSize="11dp"
+                    android:paddingLeft="10dp"
+                    android:text="26/07/2017"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
             </LinearLayout>
 
         </LinearLayout>
@@ -104,10 +111,11 @@
 
                 <TextView
                     style="@style/messageTitle"
+                    android:textStyle="bold"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="ลุงจ๊อบ"
-                    android:textSize="16dp" />
+                    android:textSize="15dp" />
 
                 <TextView
                     style="@style/messageBody"
@@ -115,6 +123,12 @@
                     android:layout_height="match_parent"
                     android:text="กรุณาติดต่อกลับ ที่เบอร์ 090-999-9999"
                     android:textSize="14dp" />
+                <TextView
+                    android:textSize="11dp"
+                    android:paddingLeft="10dp"
+                    android:text="27/07/2017"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
             </LinearLayout>
 
 
