@@ -32,6 +32,7 @@ class UserProfileFragment : Fragment() {
 
         var activity = activity as AppCompatActivity
         mToolbar = rootView.user_profile_toolbar
+        mToolbar.title = ""
         setHasOptionsMenu(true)
         activity.setSupportActionBar(mToolbar)
 

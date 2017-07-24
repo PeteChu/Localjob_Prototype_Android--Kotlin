@@ -1,12 +1,13 @@
 package com.example.localjob.fragment
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v4.app.Fragment
+import android.support.v4.view.MenuItemCompat
 import android.support.v7.app.AppCompatActivity
+import android.support.v7.widget.ShareActionProvider
 import android.support.v7.widget.Toolbar
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import android.widget.ImageView
 import com.example.localjob.MainActivity
 import com.example.localjob.R
@@ -27,7 +28,9 @@ class WorkDetailFragment : Fragment(), ObservableScrollViewCallbacks {
     lateinit var mToolbarView: Toolbar
     lateinit var mImageView: ImageView
     lateinit var mScrollView: ObservableScrollView
+    lateinit var mShareActionProvider: ShareActionProvider
     var mParallaxImageHeight: Int = 0
+
 
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val rootView = inflater!!.inflate(R.layout.fragment_work_detail, container, false)
@@ -35,7 +38,35 @@ class WorkDetailFragment : Fragment(), ObservableScrollViewCallbacks {
         return rootView
     }
 
+    override fun onCreateOptionsMenu(menu: Menu?, inflater: MenuInflater?) {
+
+        inflater!!.inflate(R.menu.share, menu)
+        super.onCreateOptionsMenu(menu, inflater)
+
+        val item = menu!!.findItem(R.id.menu_item_share)
+        mShareActionProvider = MenuItemCompat.getActionProvider(item) as ShareActionProvider
+        setShareIntent(createShareIntent())
+    }
+
+    private fun setShareIntent(shareIntent: Intent) {
+        if (mShareActionProvider != null) {
+            mShareActionProvider.setShareIntent(shareIntent)
+        }
+    }
+
+    private fun createShareIntent(): Intent {
+
+        val myShareIntent = Intent(Intent.ACTION_SEND)
+        myShareIntent.type = "text/plain"
+        val appUrl = "TEST"
+        myShareIntent.putExtra(Intent.EXTRA_TEXT, appUrl)
+
+        return myShareIntent
+    }
+
+
     fun initInstances(rootView: View) {
+        setHasOptionsMenu(true)
 
         var activity = activity as AppCompatActivity
         activity.setSupportActionBar(rootView.toolbar)
@@ -55,7 +86,7 @@ class WorkDetailFragment : Fragment(), ObservableScrollViewCallbacks {
         mToolbarView = rootView.toolbar
         mToolbarView.setBackgroundColor(ScrollUtils.getColorWithAlpha(0f, resources.getColor(R.color.primary)))
 
-        mToolbarView.setNavigationOnClickListener{ v ->
+        mToolbarView.setNavigationOnClickListener { v ->
             activity.onBackPressed()
         }
 
