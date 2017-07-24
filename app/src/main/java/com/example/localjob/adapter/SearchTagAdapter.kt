@@ -29,7 +29,9 @@ class SearchTagAdapter(mContext: Context, searchBar: MaterialEditText) : Recycle
     override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): ViewHolder {
         var v = LayoutInflater.from(parent!!.context).inflate(R.layout.item_tag, parent, false)
         var viewHolder = ViewHolder(v)
-        v.setOnClickListener(myOnClick)
+        v.setOnClickListener{
+            Toast.makeText(parent.context, "Click", Toast.LENGTH_SHORT).show()
+        }
         return viewHolder
     }
 
@@ -40,10 +42,6 @@ class SearchTagAdapter(mContext: Context, searchBar: MaterialEditText) : Recycle
         fun bindData(itemView: View, data: String) {
             itemView.item_tag.text = data
         }
-    }
-
-    var myOnClick = View.OnClickListener { v ->
-        Toast.makeText(mContext, "Click", Toast.LENGTH_SHORT).show()
     }
 
 }

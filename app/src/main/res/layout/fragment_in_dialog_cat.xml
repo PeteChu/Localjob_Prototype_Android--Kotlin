@@ -9,7 +9,7 @@
         <TextView
             android:layout_margin="10dp"
             android:textSize="18sp"
-            android:text="แท็ก : "
+            android:text="หมวด : "
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <Spinner
@@ -34,7 +34,7 @@
     <TextView
         android:layout_margin="10dp"
         android:textSize="18sp"
-        android:text="ค่าตอบแทน :"
+        android:text="รายได้ :"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
     <LinearLayout
@@ -84,7 +84,7 @@
             android:layout_gravity="center"
             android:layout_margin="10dp"
             android:textSize="18sp"
-            android:text="คำนวนรับ : "
+            android:text="จำนวน : "
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <com.shawnlin.numberpicker.NumberPicker xmlns:app="http://schemas.android.com/apk/res-auto"
