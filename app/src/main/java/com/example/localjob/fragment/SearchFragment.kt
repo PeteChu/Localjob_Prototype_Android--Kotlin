@@ -12,6 +12,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.EditText
 import android.widget.LinearLayout
+import android.widget.TextView
+import android.widget.Toast
 import com.example.localjob.R
 import com.example.localjob.adapter.SearchTagAdapter
 import com.malinskiy.superrecyclerview.SuperRecyclerView
@@ -22,7 +24,7 @@ import kotlinx.android.synthetic.main.fragment_search.view.*
  * Created by schecterza on 7/21/2017 AD.
  */
 
-class SearchFragment: Fragment() {
+class SearchFragment : Fragment() {
 
     lateinit var mToolbar: Toolbar
     lateinit var mEditText: MaterialEditText
@@ -42,7 +44,7 @@ class SearchFragment: Fragment() {
         activity.setSupportActionBar(mToolbar)
 
 
-        mToolbar.setNavigationOnClickListener{ v ->
+        mToolbar.setNavigationOnClickListener { v ->
             activity.onBackPressed()
         }
 
@@ -53,13 +55,38 @@ class SearchFragment: Fragment() {
 
         mEditText = rootView.search_bar
 
-        mRecyclerView = rootView.search_list
-        var linearLayoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
-        mRecyclerView.setLayoutManager(linearLayoutManager)
-        mRecyclerView.addItemDecoration(DividerItemDecoration(context, DividerItemDecoration.VERTICAL))
-        mRecyclerView.adapter = SearchTagAdapter(context, mEditText)
+        rootView.test_tag1.setOnClickListener(myOnClick)
+        rootView.test_tag2.setOnClickListener(myOnClick)
+        rootView.test_tag3.setOnClickListener(myOnClick)
+        rootView.test_tag4.setOnClickListener(myOnClick)
+        rootView.test_tag5.setOnClickListener(myOnClick)
 
 
+    }
+
+    var myOnClick = View.OnClickListener { v ->
+        when (v.id) {
+            R.id.test_tag1 -> {
+                onClick(v)
+            }
+            R.id.test_tag2 -> {
+                onClick(v)
+            }
+            R.id.test_tag3 -> {
+                onClick(v)
+            }
+            R.id.test_tag4 -> {
+                onClick(v)
+            }
+            R.id.test_tag5 -> {
+                onClick(v)
+            }
+        }
+    }
+
+    fun onClick(v: View) {
+        var tag = (v as TextView).text
+        mEditText.append(tag.toString() + ", ")
     }
 
     companion object {

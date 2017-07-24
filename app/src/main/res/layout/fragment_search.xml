@@ -34,11 +34,50 @@
             app:met_textColor="@android:color/white"
             app:met_textColorHint="#80FFFFFF" />
 
-        <com.malinskiy.superrecyclerview.SuperRecyclerView
-            android:id="@+id/search_list"
+        <TextView
+            android:id="@+id/test_tag1"
+            style="@style/subHeadFont"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="20dp"></com.malinskiy.superrecyclerview.SuperRecyclerView>
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:text="ขับรถ"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/test_tag2"
+            style="@style/subHeadFont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:text="พนักงานขาย"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/test_tag3"
+            style="@style/subHeadFont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:text="รักษาความปลอดภัย"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/test_tag4"
+            style="@style/subHeadFont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:text="นักดนตรี"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/test_tag5"
+            style="@style/subHeadFont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:text="พนักงานเสริฟ"
+            android:textColor="@android:color/white" />
 
     </LinearLayout>
 
